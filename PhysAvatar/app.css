@@ -180,8 +180,8 @@ span.highlight {
   display: grid; 
   grid-template-columns: repeat(2, 1fr); 
   grid-gap: 10px; 
-  margin-left: 15px; 
-  margin-right: 15px; 
+  margin-left: 0px; 
+  margin-right: 0px; 
   margin-bottom: 15px; 
   width: 100%;}
 
@@ -189,8 +189,8 @@ span.highlight {
   display: grid; 
   grid-template-columns: repeat(3, 1fr); 
   grid-gap: 10px; 
-  margin-left: 15px; 
-  margin-right: 15px; 
+  margin-left: 0px; 
+  margin-right: 0px; 
   margin-bottom: 15px; 
   width: 100%;
   height: 100%;}
@@ -199,8 +199,8 @@ span.highlight {
   display: grid; 
   grid-template-columns: repeat(1, 1fr); 
   grid-gap: 10px; 
-  margin-left: 25px; 
-  margin-right: 25px; 
+  margin-left: 0px; 
+  margin-right: 0px; 
   margin-bottom: 15px; 
   width: 100%;
   height: 100%;}
@@ -209,17 +209,18 @@ span.highlight {
   display: grid; 
   grid-template-columns: repeat(4, 1fr); 
   grid-gap: 10px; 
-  margin-left: 15px; 
-  margin-right: 15px; 
+  margin-left: 0px; 
+  margin-right: 0px; 
   margin-bottom: 15px; 
   width: 100%;
   height: 100%;}
 
-.grid-container-4-701515 { 
+.grid-container-3-701515 { 
   display: grid; 
   grid-template-columns: 61% 19.5% 19.5%; 
-  margin-left: 15px; 
-  margin-right: 15px; 
+  grid-gap: 4px; 
+  margin-left: 0px; 
+  margin-right: 0px; 
   margin-bottom: 15px; 
   width: 100%;
   height: 100%;}
