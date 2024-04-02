@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0034)https://qingiqng-zhao.github.io/PhysAvatar/ -->
+<!-- saved from url=(0034)https://qingqing-zhao.github.io/PhysAvatar/ -->
 <html>
 
 <head lang="en">
@@ -12,19 +12,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:image" content="https://qingiqng-zhao.github.io/PhysAvatar/method.pdf">
+    <meta property="og:image" content="https://qingqing-zhao.github.io/PhysAvatar/method.pdf">
     <meta property="og:image:type" content="image/pdf">
     <meta property="og:image:width" content="1296">
     <meta property="og:image:height" content="840">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://qingiqng-zhao.github.io/PhysAvatar/">
+    <meta property="og:url" content="https://qingqing-zhao.github.io/PhysAvatar/">
     <meta property="og:title" content="PhysAvatar: Learning the Physics of Dressed 3D Avatars from Visual Observations">
     <meta property="og:description" content="Modeling and rendering photorealistic avatars is of crucial importance in many applications. Existing methods that build a 3D avatar from visual observations, however, struggle to reconstruct clothed humans. We introduce PhysAvatar, a novel framework that combines inverse rendering with inverse physics to automatically estimate the shape and appearance of a human from multi-view video data along with the physical parameters of the fabric of their clothes. For this purpose, we adopt a mesh-aligned 4D Gaussian technique for spatio-temporal mesh tracking as well as a physically based inverse renderer to estimate the intrinsic material properties. PhysAvatar integrates a physics simulator to estimate the physical parameters of the garments using gradient-based optimization in a principled manner. These novel capabilities enable PhysAvatar to create high-quality novel-view renderings of avatars dressed in loose-fitting clothes under motions and lighting conditions not seen in the training data. This marks a significant advancement towards modeling photorealistic digital humans using physically based inverse rendering with physics in the loop.">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PhysAvatar: Learning the Physics of Dressed 3D Avatars from Visual Observations">
     <meta name="twitter:description" content="Modeling and rendering photorealistic avatars is of crucial importance in many applications. Existing methods that build a 3D avatar from visual observations, however, struggle to reconstruct clothed humans. We introduce PhysAvatar, a novel framework that combines inverse rendering with inverse physics to automatically estimate the shape and appearance of a human from multi-view video data along with the physical parameters of the fabric of their clothes. For this purpose, we adopt a mesh-aligned 4D Gaussian technique for spatio-temporal mesh tracking as well as a physically based inverse renderer to estimate the intrinsic material properties. PhysAvatar integrates a physics simulator to estimate the physical parameters of the garments using gradient-based optimization in a principled manner. These novel capabilities enable PhysAvatar to create high-quality novel-view renderings of avatars dressed in loose-fitting clothes under motions and lighting conditions not seen in the training data. This marks a significant advancement towards modeling photorealistic digital humans using physically based inverse rendering with physics in the loop.">
-    <meta name="twitter:image" content="https://qingiqng-zhao.github.io/PhysAvatar/method.pdf">
+    <meta name="twitter:image" content="https://qingqing-zhao.github.io/PhysAvatar/method.pdf">
 
     <link rel="icon" type="image/svg" href="./PhysAvatar/icon.svg?" sizes="196x196" />
 
@@ -264,7 +264,7 @@
                         <!-- <br>Stanford University -->
                     </li>
                     <li>
-                        <a href="https://qingiqng-zhao.github.io/">
+                        <a href="https://qingqing-zhao.github.io/">
                             <b>*</b> Qingqing Zhao <sup>1</sup>
                         </a>
                         <!-- <br>Stanford University -->
@@ -289,7 +289,7 @@
                     </li>
                     <li>
                         <a href="http://www.floriandubost.com/">
-                            Florian Dubost <sup>1</sup>
+                            Florian Dubost <sup>3</sup>
                         </a>
                         <!-- <br>Stanford University -->
                     </li>
@@ -333,7 +333,7 @@
                         Carnegie Mellon University<sup>2</sup>
                     </li>
                     <li>
-                        Google Inc.<sup>3</sup>
+                        Google Research<sup>3</sup>
                     </li>
                     <li>
                         TU Munich<sup>4</sup>
@@ -341,8 +341,33 @@
                 </ul>
                 <ul class="list-inline-star">
                     <li>
-                        <large><b>*</b> Denotes Equal Contribution</large>
+                        <large><b>*</b> Project Co-leads</large>
                         
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-offset-1-lr">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="404">
+                            <img src="./PhysAvatar/paper_image.png" height="28px">
+                            <h4>Paper</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="404">
+                        <image src="./PhysAvatar/github.png" height="28px">
+                            <h4>Code (to be released)</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="404">
+                            <img src="./PhysAvatar/database_icon.png" height="28px">
+                            <h4>Model (to be released)</h4>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -352,7 +377,7 @@
             <figure class="col-md-offset-1-lr">
                 <div class="teaser_gif_center">
                 <center>
-                    <video id="loop" class="video" width="85%" " loop playsinline autoPlay muted src="./PhysAvatar/assets/dojo1.mp4" type="video/mp4" controls></video>
+                    <video id="loop" class="video" width="85%" " loop playsinline autoPlay muted src="./PhysAvatar/assets/dojo1_compressed.mp4" type="video/mp4" controls></video>
                 </center>
                 </div>
             </figure>
@@ -390,7 +415,23 @@
         </div>
 
 
+        <div class="row">
+            <div class="col-md-offset-1-lr">
+            <center>    
+                <h3>
+                    Method Overview
+                </h3>
+            </center>
+            <div class="grid-container-1">                
+                <center><img src="./PhysAvatar/method.jpg" class="img-responsive img-margin-b-20" alt="overview" width="90%"><br></center>
+                <p class="text-justify">
+                    <b>PhysAvatar</b> takes multi-view videos and an initial mesh as input (a).  We first perform (b) dynamic mesh tracking. The tacked mesh sequences are then used for (c) garment physics estimation with a physics simulator combined with gradient-based optimization; (d) and appearance estimation through physics-based differentiable rendering. At test time, (e) given a sequence of body poses (f), we simulate garment dynamics with the learned physics parameters and employ physics-based rendering to produce the final images.
+                </p>
+                </div>
+            </div>
+        </div>
 
+        
         <div class="row">
             <div class="col-md-offset-1-lr">
                 <center>    
@@ -446,49 +487,7 @@
 
 
 
-        <div class="row">
-            <div class="col-md-offset-1-lr">
-            <center>    
-                <h3>
-                    Method Overview
-                </h3>
-            </center>
-            <div class="grid-container-1">                
-                <img src="./PhysAvatar/method.jpg" class="img-responsive img-margin-b-20" alt="overview"><br>
-                <p class="text-justify">
-                    <b>PhysAvatar</b> takes multi-view videos and an initial mesh as input (a).  We first perform (b) dynamic mesh tracking. The tacked mesh sequences are then used for (c) garment physics estimation with a physics simulator combined with gradient-based optimization; (d) and appearance estimation through physics-based differentiable rendering. At test time, (e) given a sequence of body poses (f), we simulate garment dynamics with the learned physics parameters and employ physics-based rendering to produce the final images.
-                </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-offset-1-lr">
-                <h3>
-                    Download
-                </h3>
-                <ul class="nav nav-pills nav-justified">
-                    <li>
-                        <a href="404">
-                            <img src="./PhysAvatar/paper_image.png" height="45px">
-                            <h4>Paper</h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="404">
-                        <image src="./PhysAvatar/github.png" height="45px">
-                            <h4>Code (to be released)</h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="404">
-                            <img src="./PhysAvatar/database_icon.png" height="45px">
-                            <h4>Model (to be released)</h4>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        
 
         <div class="row">
             <div class="col-md-offset-1-lr">
@@ -497,7 +496,7 @@
                 </h3>
                 <p class="text-justify">
                     We thanks <a href="https://eriszhang.github.io/">Jiayi Eris Zhang</a> for the discussions, and open source projects like <a href=https://dynamic3dgaussians.github.io/>Dynamics Gaussian Splatting</a>, <a href="https://ipc-sim.github.io/C-IPC/"> Codim-IPC </a> and <a href="https://www.mitsuba-renderer.org/">Mitsuba 3</a>. <br>
-                    This project was in part supported by Google and Samsung. Wang Yifan is partially supported by SNF Postdoc Mobility Fellowship. <br> <br>
+                    This project was in part supported by Google, Samsung, a SNF Postdoc Mobility fellowship, ARL grant W911NF-21-2-0104 and a Vannevar Bush Faculty Fellowship <br> <br>
                 </p>
             </div>
         </div>
