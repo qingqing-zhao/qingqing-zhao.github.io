@@ -92,19 +92,18 @@
   <tr>
     <td width="25%" valign="top"><a href="images/Qingqing.jpg"><img src="images/Qingqing.jpg" width="100%" style="border-radius:10px"></a>
     <p align=center>
-    | <a href="data/Qingqing_CV_2023.pdf">CV</a> |
-    <a href="mailto:cyanzhao@stanford.edu">Email</a> |
-    <br/>
-    | <a href="https://github.com/cyanzhao42">Github</a> | 
-    <a href="https://twitter.com/zqq26306417">Twitter</a> | 
+    <!-- | <a href="data/Qingqing_CV_2023.pdf">CV</a> | -->
+    <a href="mailto:cyanzhao@stanford.edu">Email</a>     | <a href="https://github.com/cyanzhao42">Github</a> | 
+    <a href="https://x.com/qingqing_zhao_">Twitter</a> | 
+    <a href="https://scholar.google.com/citations?hl=en&user=UVMgJvYAAAAJ&view_op=list_works&sortby=pubdate">G Scholar</a> |
     <!-- <a href="https://www.linkedin.com/in/qingqing-zhao-58944b150/">LinkedIn</a> | -->
     </p>
     </td>
     <td width="75%" valign="top" align="justify">
     <p>
-      I am a 3rd year Ph.D. student in Electrical Engineering at <a href="https://www.computationalimaging.org/">Stanford Computational Imaging Lab</a> advised by <a href="http://web.stanford.edu/~gordonwz/" >Prof. Gordon Wetzstein</a>.
+      I am a 4th year Ph.D. student in Electrical Engineering at <a href="https://www.computationalimaging.org/">Stanford Computational Imaging Lab</a> advised by <a href="http://web.stanford.edu/~gordonwz/" >Prof. Gordon Wetzstein</a>.
     <p>
-       I was a research intern at <a href="https://www.merl.com/">MERL</a> developing ML-assisted underground imaging tools; a student researcher at <a href="https://millergroup.yale.edu/">Miller's Group</a>, where I worked on <a href="https://millergroup.yale.edu/research">design and optimization in Nanophotonics</a>.  I did my undergrad in Physics at the Unversity of Hong Kong and worked on <a href="https://www.physics.hku.hk/~nuclear/">Nuclear Physics</a>.
+      I was a research intern at Apple, <a href="https://www.merl.com/">MERL</a>, working on Generative Design and ML-assisted system identification; a student researcher at <a href="https://millergroup.yale.edu/">Miller's Group</a>, where I worked on <a href="https://millergroup.yale.edu/research">design and optimization in Nanophotonics</a>.  I did my undergrad in Physics at the Unversity of Hong Kong and worked on <a href="https://www.physics.hku.hk/~nuclear/">Nuclear Physics</a>.
     </p>
     </p>
     Meet my cat <a href="https://www.instagram.com/bartie_foodie/">Bartie</a>.
@@ -115,14 +114,14 @@
   <tr><td><sectionheading>&nbsp;&nbsp;Research</sectionheading></td></tr>
 </table>
 <table width="75%" align="center" border="0" cellspacing="0" cellpadding="15">
-  <td>
-  My research interests lie at the intersection of <i style="color:tomato;">Science</i> and <i style="color:tomato;">Machine Learning</i>, aiming to advance both fields. The research objective is twofold: <br> 
+  <!-- <td> -->
+  <!-- My research interests lie at the intersection of <i style="color:tomato;">Science</i> and <i style="color:tomato;">Machine Learning</i>, aiming to advance both fields. The research objective is twofold: <br> 
   1.) <b>ML-accelerated simulation with Physics guidance</b>:  incorporate scientific knowledge into ML algorithms for improved performance and robustness <br>
-  2.) <b>ML-powered workflow for design and structure discovery</b>:  develop ML-powered solutions for accelerated scientific simulations, diverse and superior design generation, and accurate structural discovery
-</td>
+  2.) <b>ML-powered workflow for design and system identification</b>:  develop ML-powered solutions for accelerated scientific simulations, diverse and superior design generation, and accurate system identification. -->
+<!-- </td> -->
 </table>
 
-<hr width="80%">
+<hr width="75%">
 
 
 <table width="90%" align="center" border="0" cellspacing="0" cellpadding="10">
@@ -134,10 +133,83 @@
   <tr>
     <td width="30%" valign="top" align="center">
       <!-- <a href="https://cyanzhao42.github.io/LearnInverseProblem"> -->
-    <img src="images/gpr.png" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;">
+    <img src="images/physavatar.png" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;">
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://qingqing-zhao.github.io/PhysAvatar" id="physavatar">
+      <heading><b>PhysAvatar</b>: Learning the Physics of Dressed 3D Avatars
+        from Visual Observations </heading></a><br>
+        Yang Zheng*, Qingqing Zhao*, Guandao Yang, Wang Yifan, Donglai Xiang, Florian Dubost, Dmitry Lagun, Thabo Beeler, Federico Tombari, Leonidas Guibas, Gordon Wetzstein<br>
+      In Submission (2024)
+      </p>
+
+
+      <div class="paper" id="physavatar">
+      <a href="https://qingqing-zhao.github.io/PhysAvatar">webpage</a> |
+      <a href="https://arxiv.org/abs/2404.04421">pdf</a> |
+      <a href="javascript:toggleblock('physavatar_abs')">abstract</a> |
+      <!-- <a shape="rect" href="javascript:togglebib('GPR')" class="togglebib">bibtex</a> | -->
+      <!-- <a href="https://github.com/computational-imaging/GraphPDE">github</a> | -->
+      <a href="https://youtu.be/J3YkTtXEbGM?si=Fyz9vgZzspJOKRVq">video</a>
+
+      <p align="justify"> <i id="physavatar_abs">Modeling and rendering photorealistic avatars is of crucial importance in many applications. Existing methods that build a 3D avatar from visual observations, however, struggle to reconstruct clothed humans. We introduce PhysAvatar, a novel framework that combines inverse rendering with inverse physics to automatically estimate the shape and appearance of a human from multi-view video data along with the physical parameters of the fabric of their clothes. For this purpose, we adopt a mesh-aligned 4D Gaussian technique for spatio-temporal mesh tracking as well as a physically based inverse renderer to estimate the intrinsic material properties. PhysAvatar integrates a physics simulator to estimate the physical parameters of the garments using gradient-based optimization in a principled manner. These novel capabilities enable PhysAvatar to create high-quality novel-view renderings of avatars dressed in loose-fitting clothes under motions and lighting conditions not seen in the training data. This marks a significant advancement towards modeling photorealistic digital humans using physically based inverse rendering with physics in the loop. </i></p>
+
+<pre xml:space="preserve">
+  @article{zheng2024physavatar,
+    title={PhysAvatar: Learning the Physics of Dressed 3D Avatars from Visual Observations},
+    author={Zheng, Yang and Zhao, Qingqing and Yang, Guandao and Yifan, Wang and Xiang, Donglai and Dubost, Florian and Lagun, Dmitry and Beeler, Thabo and Tombari, Federico and Guibas, Leonidas and others},
+    journal={arXiv preprint arXiv:2404.04421},
+    year={2024}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+
+  <tr>
+    <td width="30%" valign="top" align="center">
+      <!-- <a href="https://cyanzhao42.github.io/LearnInverseProblem"> -->
+    <img src="images/pose2motion.png" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;">
     </a></td>
     <td width="60%" valign="top">
       <!-- <p><a href="https://cyanzhao42.github.io/LearnInverseProblem" id="gpr"> -->
+      <heading><b>Pose-to-Motion</b>: Cross-Domain Motion Retargeting with Pose Prior</heading></a><br>
+      Qingqing Zhao, Peizhuo Li, Wang Yifan, Olga Sorkine-Hornung, Gordon Wetzstein<br>
+      In Submission (2024)
+      </p>
+
+      <div class="paper" id="P2M">
+      <!-- <a href="https://cyanzhao42.github.io/LearnInverseProblem">webpage</a> | -->
+      <!-- <a href="https://arxiv.org/pdf/2112.02094.pdf">pdf</a> | -->
+      <a href="javascript:toggleblock('p2m_abs')">abstract</a> |
+      <!-- <a shape="rect" href="javascript:togglebib('GPR')" class="togglebib">bibtex</a> | -->
+      <a href="https://github.com/404">github</a> |
+      <!-- <a href="https://youtu.be/ov0jxa4xHGU">video</a> -->
+
+      <p align="justify"> <i id="p2m_abs">Creating believable motions for various characters has long been a goal in computer graphics. Current learning-based motion synthesis methods depend on extensive motion datasets, which are often challenging, if not impossible, to obtain. On the other hand, pose data is more accessible, since static posed characters are easier to create and can even be extracted from images using recent advancements in computer vision. In this paper, we utilize this alternative data source and introduce a neural motion synthesis approach through retargeting. Our method generates plausible motions for characters that have only pose data by transferring motion from an existing motion capture dataset of another character, which can have drastically different skeletons. Our experiments show that our method effectively combines the motion features of the source character with the pose features of the target character, and performs robustly with small or noisy pose data sets, ranging from a few artist-created poses to noisy poses estimated directly from images. Additionally, a conducted user study indicated that a majority of participants found our retargeted motion to be more enjoyable to watch, more lifelike in appearance, and exhibiting fewer artifacts.</i></p>
+
+<pre xml:space="preserve">
+  @article{zhao2023pose,
+    title={Pose-to-Motion: Cross-Domain Motion Retargeting with Pose Prior},
+    author={Zhao, Qingqing and Li, Peizhuo and Yifan, Wang and Sorkine-Hornung, Olga and Wetzstein, Gordon},
+    journal={arXiv preprint arXiv:2310.20249},
+    year={2023}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td width="30%" valign="top" align="center">
+      <!-- <a href="https://cyanzhao42.github.io/LearnInverseProblem"> -->
+    <img src="images/gpr.png" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;">
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://github.com/merlresearch/DeepBornFNO" id="gpr">
       <heading>Deep Born Operator Learning for Reflection <br>Tomographic Imaging</heading></a><br>
       Qingqing Zhao, Yanting Ma, Petros T. Boufounos,<br> Saleh Nabi, Hassan Mansour<br>
       ICASSP 2023 
@@ -148,8 +220,8 @@
       <!-- <a href="https://arxiv.org/pdf/2112.02094.pdf">pdf</a> | -->
       <a href="javascript:toggleblock('GPR_abs')">abstract</a> |
       <!-- <a shape="rect" href="javascript:togglebib('GPR')" class="togglebib">bibtex</a> | -->
-      <!-- <a href="https://github.com/computational-imaging/GraphPDE">github</a> | -->
-      <!-- <a href="https://youtu.be/ov0jxa4xHGU">video</a> -->
+      <a href="https://github.com/merlresearch/DeepBornFNO">github</a> |
+      <a href="https://youtu.be/RUdxovimitY">video</a>
 
       <p align="justify"> <i id="GPR_abs">Recent developments in wave-based sensor technologies, such as ground penetrating radar (GPR), provide new opportunities for accurate imaging of underground scenes. Given measurements of the scattered electromagnetic wavefield, the goal is to estimate the spatial distribution of the permittivity of the underground scenes. However, such problems are highly ill-posed, difficult to formulate, and computationally expensive. In this paper, we propose a physics-inspired machine learning-based method to learn the wave-matter interaction under the GPR setting. The learned forward model is combined with a learned signal prior to recover the permittivity distribution of the unknown underground scenes. We test our approach on a dataset of 400 permittivity maps with a three-layer background, which is challenging to solve using existing methods. We demonstrate via numerical simulation that our method achieves a 50% improvement in mean squared error over the benchmark machine learning-based solvers for reconstructing layered underground scenes.</i></p>
 
@@ -323,6 +395,12 @@ hideblock('modev_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('nuclear_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('p2m_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('physavatar_abs');
 </script>
 </body>
 
